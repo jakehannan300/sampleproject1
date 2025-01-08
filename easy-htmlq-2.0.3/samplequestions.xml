@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <config version="1.1.1" htmlParse="false">
+
+     <!-- title of the study -->
+     <item id="studyTitle">Q TEST PROJECT</item>
+
+     <!-- text-align property(left|right) -->
+     <item id="textAlign">left</item>
+
+     <!-- shuffle cards (true|false) (4) -->
+     <item id="shuffleCards">true</item>
+
+     <!-- access code required (true|false) (5) -->
+     <item id="loginrequired">false</item>
+     <item id="clearCachePassword">cleareqmobilecache</item>
+     <!-- login with common password (leave blank if not required) -->
+     <item id="loginPassword"></item>
+    <item id="partNameRequired">true</item>
+      <!-- Use login script -->
+     <item id="useLogInScript">false</item>
+      <!-- URL to individual login script(leave blank if not required) -->
+     <item id="loginUrl"></item>
+     <!-- request mode (post|get) -->
+     <item id="loginUrlMethod"></item>
+
+     <item id="setConstantCardHeight">true</item>
+     <item id="constantCardHeight">150</item>
+     <item id="setConstantCardWidth">true</item>
+     <item id="constantCardWidth">200</item>
+     <!-- activate/deactivate optional steps (true|false) -->
+     <item id="showStep3">true</item>
+     <item id="showStep4">true</item>
+     <item id="showStep5">true</item>
+
+     <!-- HtmlQ only: disable the in-window back button -->
+     <item id="disableBackButton">false</item>
+
+     <!-- define form elements for step5; only displayed if showStep5 is true (delete tags if not required) -->
+     <!-- add label: <label>[STRING]</label> -->
+     <!-- add note: <note>[STRING]</note> -->
+     <!-- add input-field: <input type="[text|textarea|radio|select|checkbox|rating2|rating5|rating10]">[VALUE]</input> -->
+     <!-- optional attributes: bg, id, maxlength, restricted, required, scale  -->
+     <item id="form">
+        <label>Age</label>
+        <note>Please enter your year of birth (E.g. 1980)</note>
+        <input type="text" required="true" maxlength="4" ></input>
+
+        <label>Did you vote in the 2021 Federal Election?</label>
+        <note>Please answer Yes or No </note>
+        <input type="text" required="true" maxlength="100000" ></input>
+
+        <label>Do you feel a personal responsibility to vote?</label>
+        <note>Yes or No</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>Do you believe your vote has an impact on election outcomes? Why or why not?</label>
+        <note>Please explain</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>What motivates you to participate in elections if at all?</label>
+        <note>..</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>On which level of politics do you feel most engaged with, local, provincial, federal? Explain your answer</label>
+        <note>..</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>Have you ever faced challenges with trying to vote in Canada?</label>
+        <note>x</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>Do you believe the current political parties at the federal level in Canada are adequately responsive to your interests?</label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>Do you believe that politicians at the federal level in Canada are adequately responsive to your interests?</label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>Do you believe the current government at the federal level in Canada are adequately responsive to your interests?</label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>To what extent do you believe the current electoral system in Canada is fair?</label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>How concerned are you about foreign interference in elections from Russia, and/or China? </label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>How concerned are you about foreign interference in elections from non-governmental entities? E.g. Private Companies</label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>How concerned are you about foreign interference in elections from the United States?</label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>Do you think your level of trust in the electoral institutions in Canada would impact your likelihood to vote?</label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>Do you believe that FPTP is the best electoral system for the Canadian political context? Why or why not? </label>
+        <note>.</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+     </item>
+
+     <!-- URL for data transmission via POST/GET (leave blank if not required) -->
+     <item id="submitUrl">exe.php?do=save</item>
+  
+     <!-- request mode (post|get|firebase) -->
+     <item id="submitUrlMethod">firebase</item>
+  
+     <!-- data transmission via email, user must have an e-mail programm like Outlook (leave blank if not required) -->
+     <item id="submitMail">yourdomain.com</item>
+   </config>
